@@ -11,8 +11,8 @@ class UserRepositoryImpl @Inject constructor(
 ) : UserRepository {
     override suspend fun fetchUsers(): List<UsersResponse> = api.fetchUsers()
 
-    override suspend fun fetchUserDetails(name: String): UserResponse = api.fetchUserDetails(name)
+    override suspend fun fetchUserDetails(login: String): UserResponse = api.fetchUserDetails(login)
 
-    override suspend fun fetchUserRepository(name: String): List<RepositoriesResponse> =
-        api.fetchUserRepository(name)
+    override suspend fun fetchUserRepository(login: String): List<RepositoriesResponse> =
+        api.fetchUserRepository(login)
 }

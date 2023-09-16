@@ -11,9 +11,9 @@ interface GithubApi {
     @GET("/users")
     suspend fun fetchUsers(): List<UsersResponse>
 
-    @GET("/users/{name}")
-    suspend fun fetchUserDetails(@Path("name") name: String): UserResponse
+    @GET("/users/{login}")
+    suspend fun fetchUserDetails(@Path("login") login: String): UserResponse
 
-    @GET("/users/{name}/repos")
-    suspend fun fetchUserRepository(@Path("name") name: String): List<RepositoriesResponse>
+    @GET("/users/{login}/repos")
+    suspend fun fetchUserRepository(@Path("login") login: String): List<RepositoriesResponse>
 }

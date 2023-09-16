@@ -8,7 +8,7 @@ import retrofit2.http.Path
 interface UserRepository {
     suspend fun fetchUsers(): List<UsersResponse>
 
-    suspend fun fetchUserDetails(@Path("name") name: String): UserResponse
+    suspend fun fetchUserDetails(@Path("name") login: String): UserResponse
 
-    suspend fun fetchUserRepository(@Path("name") name: String): List<RepositoriesResponse>
+    suspend fun fetchUserRepository(@Path("name") login: String): List<RepositoriesResponse>
 }
