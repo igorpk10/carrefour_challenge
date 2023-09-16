@@ -4,6 +4,6 @@ import com.igor.carrefourchallenge.domain.models.User
 
 interface FetchUsersUseCase {
 
-    suspend fun invoke(): List<User>
+    suspend operator fun invoke(): List<User>
 
 }
