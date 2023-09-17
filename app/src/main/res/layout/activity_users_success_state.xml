@@ -38,7 +38,7 @@
             style="@style/Widget.Material3.SearchBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Procure por alguém"
+            android:hint="@string/search_someone"
             android:theme="@style/Theme.Material3.DayNight" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -47,7 +47,7 @@
         style="@style/TextAppearance.Material3.SearchView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:hint="Pesquise aqui"
+        android:hint="@string/search_here"
         android:imeOptions="actionDone"
         app:layout_anchor="@id/cat_search_bar">
 

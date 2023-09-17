@@ -21,8 +21,7 @@ class UserViewModel @Inject constructor(
     val state: LiveData<UserActivityUiState> get() = _state
 
     private var users: List<User> = listOf()
-
-
+    
     fun getUsers() = viewModelScope.launch {
         _state.value = UserActivityUiState.onLoading
         try {
