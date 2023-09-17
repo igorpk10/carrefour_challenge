@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_users" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.search.SearchBar
+            android:id="@+id/cat_search_bar"
+            style="@style/Widget.Material3.SearchBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Procure por alguém"
+            android:theme="@style/Theme.Material3.DayNight" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.search.SearchView
+        android:id="@+id/cat_search_view"
+        style="@style/TextAppearance.Material3.SearchView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Pesquise aqui"
+        android:imeOptions="actionDone"
+        app:layout_anchor="@id/cat_search_bar">
+
+    </com.google.android.material.search.SearchView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

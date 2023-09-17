@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit
 class NetworkModule {
     companion object {
         private const val TIME_OUT_SECONDS: Long = 5L
-        private const val BASE_URL: String = "http://www.google.com"
+        private const val BASE_URL: String = "https://api.github.com"
     }
 
     @Provides

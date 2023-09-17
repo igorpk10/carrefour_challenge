@@ -8,7 +8,8 @@ fun List<UsersResponse>.mapToUsers(): List<User> {
         User(
             id = it.id,
             login = it.login,
-            avatarUrl = it.avatarUrl
+            avatarUrl = it.avatarUrl,
+            url = it.htmlUrl
         )
     }
 }

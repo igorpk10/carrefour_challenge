@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--  Light -->
-    <color name="background_light">#d1d7d5</color>
+    <color name="background_light">@android:color/white</color>
     <color name="colorPrimary_light">#0036eb</color>
     <color name="neutral_text_light">#5e5e5e</color>
 

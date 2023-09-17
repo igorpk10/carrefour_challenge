@@ -57,7 +57,7 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
-    implementation("androidx.recyclerview:recyclerview:1.3.0")
+    implementation("androidx.recyclerview:recyclerview:1.3.1")
 
     //Hilt
     var hilt = "2.44"
@@ -97,6 +97,10 @@ dependencies {
     // Lottie
     val lottie = "5.2.0"
     implementation("com.airbnb.android:lottie:${lottie}")
+
+    //Shimmer
+    val shimmer = "0.5.0"
+    implementation("com.facebook.shimmer:shimmer:${shimmer}")
 
     // Test Libs
     testImplementation("junit:junit:4.13.2")

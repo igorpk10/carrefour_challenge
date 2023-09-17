@@ -1,9 +1,7 @@
 package com.igor.carrefourchallenge.di
 
-import com.igor.carrefourchallenge.domain.usecases.FetchUserRepositoriesUseCase
-import com.igor.carrefourchallenge.domain.usecases.FetchUserRepositoriesUseCaseImpl
-import com.igor.carrefourchallenge.domain.usecases.FetchUserUseCase
-import com.igor.carrefourchallenge.domain.usecases.FetchUserUseCaseImpl
+import com.igor.carrefourchallenge.domain.usecases.FetchUserDetailsUseCase
+import com.igor.carrefourchallenge.domain.usecases.FetchUserDetailsUseCaseImpl
 import com.igor.carrefourchallenge.domain.usecases.FetchUsersUseCase
 import com.igor.carrefourchallenge.domain.usecases.FetchUsersUseCaseImpl
 import dagger.Binds
@@ -19,8 +17,5 @@ interface UseCasesModule {
     fun bindFetchUsersUseCase(useCase: FetchUsersUseCaseImpl): FetchUsersUseCase
 
     @Binds
-    fun bindFetchUserUseCase(useCase: FetchUserUseCaseImpl): FetchUserUseCase
-
-    @Binds
-    fun bindFetchUserRepositoryUseCase(useCase: FetchUserRepositoriesUseCaseImpl): FetchUserRepositoriesUseCase
+    fun bindFetchUserUseCase(useCase: FetchUserDetailsUseCaseImpl): FetchUserDetailsUseCase
 }
